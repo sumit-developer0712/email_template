@@ -1,10 +1,12 @@
 import React from 'react';
-import { StyledTemplateSection, StyledCommModeSection } from './styled';
+import { StyledTemplateSection, StyledCommModeSection, StyledSmsTemplateSection } from './styled';
 
 class CommsManagerPage extends React.Component {
   state = {
     inputs: {
-      templateId: ''
+      templateId: '',
+      templateName: '',
+      templateDes: ''
     }
   }
   onChange = (e) => {
@@ -17,6 +19,7 @@ class CommsManagerPage extends React.Component {
         <form onChange={this.onChange}>
           <StyledTemplateSection {...inputs} />
           <StyledCommModeSection {...inputs} />
+          <StyledSmsTemplateSection onChange={this.onChange} {...inputs} />
         </form>
       </>
     )

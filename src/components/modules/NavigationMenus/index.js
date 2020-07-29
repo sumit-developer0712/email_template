@@ -5,32 +5,36 @@ import { StyledContainer } from './styled';
 function NavigationMenus(props) {
   const comManagerConfig = {
     name: 'Communication Manager',
+    id: 'comm-manager',
     menuIcon: 'fa-plus',
     options: [
       {
-        path: '/',
+        id: '/',
         title: 'Create New Communication'
       },
       {
-        path: '/update',
+        id: '/update',
         title: 'Update Existing Communication'
       },
       {
-        path: '/',
+        id: '/',
         title: 'Send Instant Communication'
       }
     ]
   };
   const dataManagerConfig = {
     name: 'Data Manager',
+    id: 'data-manager',
     menuIcon: 'fa-pencil'
   };
   const accManagerConfig = {
     name: 'Account Manager',
+    id: 'acc-manager',
     menuIcon: 'fa-user'
   };
   const reportsConfig = {
     name: 'Reports',
+    id: 'reports',
     menuIcon: 'fa-line-chart'
   };
   return (
