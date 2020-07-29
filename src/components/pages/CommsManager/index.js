@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledTemplateSection, StyledCommModeSection, StyledSmsTemplateSection } from './styled';
+import { StyledTemplateSection, StyledCommModeSection, StyledSmsTemplateSection, StyledEmailTemplateSection } from './styled';
 
 class CommsManagerPage extends React.Component {
   state = {
@@ -20,6 +20,7 @@ class CommsManagerPage extends React.Component {
           <StyledTemplateSection {...inputs} />
           <StyledCommModeSection {...inputs} />
           <StyledSmsTemplateSection onChange={this.onChange} {...inputs} />
+          <StyledEmailTemplateSection {...inputs} />
         </form>
       </>
     )
