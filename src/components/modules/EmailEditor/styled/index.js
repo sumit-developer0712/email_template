@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { LOWEL_BLUE } from '../../../../shared/constants';
 
 export const StyledView = styled.div`
   margin: 20px 12px 20px 12px;
@@ -14,7 +15,7 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledHeader = styled.div`
-  background-color: #102c5c;
+  background-color: ${LOWEL_BLUE};
   height: 50px;
 `;
 
