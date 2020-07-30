@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledTemplateSection, StyledCommModeSection, StyledSmsTemplateSection, StyledEmailTemplateSection } from './styled';
+import { templateHtml } from '../../../assets/templateHtml';
 
 class CommsManagerPage extends React.Component {
   state = {
@@ -36,33 +37,41 @@ class CommsManagerPage extends React.Component {
 
   onSubmit = (e) => {
     const { name } = e.target;
+    let payload;
     if (name === 'email_submit') {
-      const payload = {
+      payload = {
         name: 'email',
-        content: '',
+        content: templateHtml.emailTemplate,
         message: ''
       }
-      const URL = 'https://run.mocky.io/v3/501b6c07-3b81-4b59-a25e-d951c1b5e76d';
-      const options = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(payload)
-      }
-      fetch(URL, options)
-        .then((res) => res.json())
-        .then((response) => {
-          this.setState({
-            emailSubmitData: response
-          })
-        })
-        .catch((error) => {
-          this.setState({
-            error: true
-          })
-        })
     }
+    if (name === 'sms_submit') {
+      payload = {
+        name: 'sms',
+        content: templateHtml.sms,
+        message: ''
+      } 
+    }
+    const URL = 'http://localhost:8080/saveTemplate';
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    }
+    fetch(URL, options)
+      .then((res) => res.json())
+      .then((response) => {
+        this.setState({
+          emailSubmitData: response
+        })
+      })
+      .catch((error) => {
+        this.setState({
+          error: true
+        })
+      })
   }
 
   render() {
