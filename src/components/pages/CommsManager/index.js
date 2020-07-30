@@ -33,6 +33,34 @@ class CommsManagerPage extends React.Component {
   }
 
   onSubmit = (e) => {
+    const { name } = e.target;
+    if (name === 'email_submit') {
+      const payload = {
+        name: 'email',
+        content: MockHtml.toString(),
+        message: ''
+      }
+      const URL = 'http://localhost:8080/saveTemplate';
+      const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      }
+      fetch(URL, options)
+        .then((res) => res.json())
+        .then((response) => {
+        this.setState({
+          emailSubmitData: response
+        })
+      })
+      .catch((error) => {
+        this.setState({
+          error: true
+        })
+      })
+    }
   }
 
   render() {

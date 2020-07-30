@@ -1,632 +1,176 @@
 {
+  "counters": {
+    "u_column": 1,
+    "u_row": 1,
+    "u_content_image": 1,
+    "u_content_text": 3,
+    "u_content_html": 3
+  },
   "body": {
-    "rows": [{
-      "cells": [1],
-      "columns": [{
-        "contents": [{
-          "type": "image",
-          "values": {
-            "maxWidth": "100%",
-            "src": {
-              "url": "https://a.mailmunch.co/user_data/landing_pages/1500310730675-logosample_03.png",
-              "width": 266,
-              "height": 62
-            },
-            "draggable": true,
-            "containerPadding": "10px 10px 20px",
-            "deletable": true,
-            "selectable": true,
-            "action": {
-              "url": "",
-              "target": ""
-            },
-            "altText": "Image",
-            "fullWidth": false,
-            "textAlign": "center"
+    "rows": [
+      {
+        "cells": [
+          1
+        ],
+        "columns": [
+          {
+            "contents": [
+              {
+                "type": "image",
+                "values": {
+                  "containerPadding": "10px",
+                  "_meta": {
+                    "htmlID": "u_content_image_1",
+                    "htmlClassNames": "u_content_image"
+                  },
+                  "selectable": true,
+                  "draggable": true,
+                  "duplicatable": true,
+                  "deletable": true,
+                  "src": {
+                    "url": "https://unroll-images-production.s3.amazonaws.com/projects/0/1596131929832-Screenshot%202020-07-30%20at%203.24.29%20PM.png",
+                    "width": 1152,
+                    "height": 170
+                  },
+                  "textAlign": "center",
+                  "altText": "Image",
+                  "action": {
+                    "name": "web",
+                    "values": {
+                      "href": "",
+                      "target": "_blank"
+                    }
+                  },
+                  "hideDesktop": false,
+                  "hideMobile": false
+                }
+              },
+              {
+                "type": "text",
+                "values": {
+                  "containerPadding": "10px",
+                  "_meta": {
+                    "htmlID": "u_content_text_3",
+                    "htmlClassNames": "u_content_text"
+                  },
+                  "selectable": true,
+                  "draggable": true,
+                  "duplicatable": true,
+                  "deletable": true,
+                  "color": "#000000",
+                  "textAlign": "left",
+                  "lineHeight": "140%",
+                  "linkStyle": {
+                    "inherit": true,
+                    "linkColor": "#0000ee",
+                    "linkHoverColor": "#0000ee",
+                    "linkUnderline": true,
+                    "linkHoverUnderline": true
+                  },
+                  "hideDesktop": false,
+                  "hideMobile": false,
+                  "text": "<p style=\"font-size: 14px; line-height: 140%; text-align: center;\"><strong><span style=\"font-size: 26px; line-height: 36.4px;\">Your Delivery Is Scheduled for</span></strong></p>"
+                }
+              },
+              {
+                "type": "text",
+                "values": {
+                  "containerPadding": "10px",
+                  "_meta": {
+                    "htmlID": "u_content_text_2",
+                    "htmlClassNames": "u_content_text"
+                  },
+                  "selectable": true,
+                  "draggable": true,
+                  "duplicatable": true,
+                  "deletable": true,
+                  "color": "#000000",
+                  "textAlign": "left",
+                  "lineHeight": "140%",
+                  "linkStyle": {
+                    "inherit": true,
+                    "linkColor": "#0000ee",
+                    "linkHoverColor": "#0000ee",
+                    "linkUnderline": true,
+                    "linkHoverUnderline": true
+                  },
+                  "hideDesktop": false,
+                  "hideMobile": false,
+                  "text": "<p style=\"font-size: 14px; line-height: 140%; text-align: center;\"><span style=\"font-size: 26px; line-height: 36.4px;\"><strong><span style=\"line-height: 36.4px; font-size: 26px;\">{Appointment Start Date}</span></strong></span></p>"
+                }
+              },
+              {
+                "type": "html",
+                "values": {
+                  "containerPadding": "10px",
+                  "_meta": {
+                    "htmlID": "u_content_html_2",
+                    "htmlClassNames": "u_content_html"
+                  },
+                  "selectable": true,
+                  "draggable": true,
+                  "duplicatable": true,
+                  "deletable": true,
+                  "html": "<table class=\"row collapse\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\">\n                      <tbody>\n                        <tr style=\"padding: 0; text-align: left; vertical-align: top;\">\n                          <th class=\"small-12 large-12 columns\" style=\"Margin: 0 auto; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0 auto; padding: 0px 20px; padding-bottom: 6px; padding-left: 8px; padding-right: 8px; text-align: left; width: 564px;\">\n\n                            <table class=\"row collapse\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\">\n                              <tbody>\n                                <tr style=\"padding: 0; text-align: left; vertical-align: top;\">\n\n                                  <th class=\"small-12 large-6 text-center\" style=\"Margin: 0; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; padding: 0px 40px; padding-left: 8px; padding-right: 8px; text-align: center; width: 40%;\">\n                                    <table class=\"collapse\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\">\n                                      <tbody>\n                                        <tr style=\"padding: 0; text-align: left; vertical-align: top;\">\n                                          <th style=\"Margin: 0; border: 4px solid #e5e5e5; border-radius: 5px; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; overflow: hidden; padding: 10px; text-align: left;\">\n                                            <p class=\"text-center\" style=\"Margin: 0; Margin-bottom: 10px; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-weight: normal; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; text-align: center; text-transform:uppercase;\"><strong> Date</strong></p>\n                                            <p class=\"text-center\" style=\"Margin: 0; Margin-bottom: 10px; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 48px; font-weight: bold; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;\"> Date</p>\n                                            <p class=\"text-center\" style=\"Margin: 0; Margin-bottom: 10px; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; text-align: center;\"> Date</p>\n                                            <table class=\"button\" style=\"Margin: 20px 0 20px 0; border-collapse: collapse; border-spacing: 0; margin: 20px auto 0px auto; padding: 0; text-align: left; vertical-align: top; width: 100%;\">\n                                              <tbody>\n                                                <tr style=\"padding: 0; text-align: left; vertical-align: top;\">\n                                                  <td style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 1.2; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">\n                                                    <table width=\"100%\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\">\n                                                      <tbody>\n                                                        <tr style=\"padding: 0; text-align: left; vertical-align: top;\">\n                                                          <td class=\"text-center\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; background: #0471AF; border: 2px solid #0471AF; border-collapse: collapse !important; color: #fefefe; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 1.2; margin: 0; padding: 0; text-align: center; vertical-align: top; word-wrap: break-word;\">\n                                                            <span class=\"text-center\" style=\"Margin: 0; border: 0 solid #0471AF; border-radius: 3px; color: #fff; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 1.3; margin: 0; padding: 8px 8px 8px 8px; text-align: center; text-decoration: none;\"><strong>Delivery Window</strong></span><br>\n                                                              <span class=\"text-center\" style=\"display: block; font-size: 16px; text-align: center; width: 100%; text-transform:lowercase;\">Date</span>\n                                                          </td>\n                                                        </tr>\n                                                      </tbody>\n                                                    </table>\n                                                  </td>\n                                                </tr>\n                                              </tbody>\n                                            </table>\n                                          </th>\n                                        </tr>\n                                      </tbody>\n                                    </table>\n                                  </th>\n\n                                  <th class=\"small-12 large-6\" style=\"Margin: 0; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; padding: 0; padding-left: 8px; padding-right: 8px; text-align: left; width: 60%;\">\n                                    <p>Your delivery has been scheduled\nfor Date.<br /><br />\nIf you have a question, please call\nthe store fulfilling your item(s)\nlisted below.</p>\n                                  </th>\n                                </tr>\n                              </tbody>\n                            </table>\n\n\n\n\n                            <h2 style=\"Margin: 0; Margin-bottom: 10px; border-bottom: 2px solid #E5E5E5; color: inherit; font-family: Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; line-height: 1.3; margin: 0; margin-bottom: 20px; padding: 0; padding-bottom: 10px; padding-top: 40px; text-align: left; word-wrap: normal;\">On the Way</h2>\n\n                            <h3 style=\"Margin: 0; Margin-bottom: 10px; color: inherit; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1.3; margin: 20px 0px; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;\">Address</h3>\n                            <table class=\"row collapse\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\">\n                            <tr>\n                            <td style=\"Margin: 0; Margin-bottom: 10px; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; padding-left: 20px; text-align: left; width:100%;\">\n                               \n                            John Doe   <br />\n                                  21269 VICTORIAS CROSS TER <br />\n                                     ASHBURN, VA 20147</td></tr>\n                            </table>\n\n\n                            <p style=\"Margin: 0; Margin-bottom: 10px; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; padding-left: 20px; text-align: left;\"> </p>\n\n                           <table class=\"row collapse\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\">\n                                                <tr style=\"padding: 0; text-align: left; vertical-align: top;\">\n                                                <th class=\"small-12 large-10 last columns\" style=\"Margin: 0 auto; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0 auto; padding: 0; padding-left: 0 !important; padding-right: 0 !important; text-align: left; width: 80%;\"><h3 style=\"Margin: 0; Margin-bottom: 10px; color: inherit; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1.3; margin: 20px 0px; margin-bottom: 10px; padding: 0; text-align: left; word-wrap: normal;\">Delivery Item(s)</h3></th>\n                                                <th class=\"small-12 large-10 last columns\" style=\"Margin: 0 auto; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0 auto; padding: 0; padding-left: 0 !important; padding-right: 0 !important; text-align: left; width: 20%;\"><h3 style=\"Margin: 0; Margin-bottom: 10px; color: inherit; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 1.3; margin: 20px 0px; margin-bottom: 10px; padding: 0; text-align: center; word-wrap: normal;\">QTY</h3>\n                                                </th>\n                                                </tr>\n                            </table>\n                            \n                            <table class=\"row collapse\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\">\n\n\n                              <tbody>\n                                <tr style=\"padding: 0; text-align: left; vertical-align: top;\"> \n                                  <th class=\"small-12 large-10 last columns\" style=\"Margin: 0 auto; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0 auto; padding: 0; padding-bottom: 6px; padding-left: 0 !important; padding-right: 0 !important; text-align: left; width: 83.33333%;\">\n\n                                 \n                                 <table class=\"row collapse\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\">\n                                   <tbody>\n                                     <tr style=\"padding: 0; text-align: left; vertical-align: top;\">\n                                       <th class=\"small-8 large-8 first columns\" style=\"Margin: 0 auto; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0 auto; padding: 0; padding-bottom: 6px; padding-left: 20px !important; padding-right: 0 !important; text-align: left; width: 80%;\"> <p style=\"Margin: 0; Margin-bottom: 10px; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;\"><span style=\"Margin: 0; font-family: Helvetica, Arial, sans-serif; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;\"><strong>CLIFF 30 IN WHITE VANITY COMBO</strong></span></p>\n                                         <p style=\"Margin: 0; Margin-bottom: 10px; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;\">Item #: 1857669<span class=\"shortdiv\" style=\"color: #ccc; font-size: 14px; padding: 0px 10px;\">|</span> Model #: VVC-CLIF30-0</p>\n                                         \n                                       </th>\n                                       <th class=\"small-8 large-8 first columns\" style=\"Margin: 0 auto; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0 auto; padding: 0; padding-bottom: 6px; padding-left: 0 !important; padding-right: 0 !important; text-align: center; width: 20%;\"> 1\n                                       </th>\n                                       \n                                       <th class=\"expander\" style=\"Margin: 0; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;\"></th>\n                                     </tr>\n                                   </tbody>\n                                 </table>\n                                 \n                                  </th>\n                                </tr>\n                                <tr style=\"padding: 0; text-align: left; vertical-align: top;\">\n                                  <th class=\"divider small-12 large-12\" colspan=\"3\" style=\"Margin: 0; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; padding: 20px 0px; padding-left: 16px; padding-right: 8px; text-align: left; width: 100%;\">\n                                    \n                                  </th>\n                                </tr>\n\n                              </tbody>\n                            </table>\n                            \n                            <p style=\"Margin: 0; Margin-bottom: 10px; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 0 0 0 20px; text-align: left;\"><strong>Fulfilling Location: </strong>LEESBURG, VA <strong><span style=\"color: #0471AF;\">(571) 510-8163</span></strong></p>\n                            <p style=\"color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin-top:40px; margin-bottom: 40px; padding: 0; text-align: center;\">For more information on when you'll be charged, view our <a style=\"text-decoration:none; color: #0471AF;\" href=\"https://www.lowes.com/l/billing-policy.html\">billing policy</a>.</p>\n\n                          </th>\n                          <th class=\"expander\" style=\"Margin: 0; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;\"></th>\n                        </tr>\n                      </tbody>\n                    </table>",
+                  "hideDesktop": false,
+                  "hideMobile": false
+                }
+              },
+              {
+                "type": "html",
+                "values": {
+                  "containerPadding": "10px",
+                  "_meta": {
+                    "htmlID": "u_content_html_3",
+                    "htmlClassNames": "u_content_html"
+                  },
+                  "selectable": true,
+                  "draggable": true,
+                  "duplicatable": true,
+                  "deletable": true,
+                  "html": "<table class=\"row collapse\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\">\n                      <tbody>\n                        <tr style=\"padding: 0; text-align: left; vertical-align: top;\">\n                          <th class=\"small-12 large-12 first last columns\" style=\"Margin: 0 auto; background: #0471AF url('https://www.lowes.com/Services/STM_TEST/pickup/footer-bg.jpg') top center no-repeat; background-size: 100% auto; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0 auto; padding: 45px 85px 20px 85px; padding-bottom: 6px; padding-left: 16px; padding-right: 16px; text-align: left; width: 588px;\">\n\n                            <table class=\"row collapse\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\">\n                              <tbody>\n                                <tr style=\"padding: 0; text-align: left; vertical-align: top;\">\n                                  <th class=\"small-12 large-12 first last columns\" colspan=\"2\" style=\"Margin: 0 auto; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0 auto; padding: 0; padding-bottom: 6px; padding-left: 0 !important; padding-right: 0 !important; text-align: left; width: 100%;\">\n                                    <p style=\"Margin: 0; Margin-bottom: 10px; color: #fff; font-family: Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 1.2; margin: 0; margin-bottom: 10px; padding: 20px; text-align: center;\"\n                                      class=\"text-center\">View our <a href=\"https://www.lowes.com/l/privacy-and-security-statement.html\" style=\"Margin: 0; color: #fff; font-family: Helvetica, Arial, sans-serif; font-weight: bold; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;\">Privacy Statement</a>.\n                                      Lowe's and the gable design are registered trademarks of LF, LLC.</p>\n                                  </th>\n                                  <th class=\"expander\" style=\"Margin: 0; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;\"></th>\n                                </tr>\n                              </tbody>\n                            </table>\n\n\n                          </th>\n\n                          <th class=\"expander\" style=\"Margin: 0; color: #0a0a0a; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 1.2; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;\"></th>\n                        </tr>\n                      </tbody>\n                    </table>",
+                  "hideDesktop": false,
+                  "hideMobile": false
+                }
+              }
+            ],
+            "values": {
+              "backgroundColor": "",
+              "padding": "0px",
+              "border": {},
+              "_meta": {
+                "htmlID": "u_column_1",
+                "htmlClassNames": "u_column"
+              }
+            }
           }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "rgba(255,255,255,0)",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "10px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": true,
-        "draggable": true,
-        "deletable": true
-      }
-    }, {
-      "cells": [1],
-      "columns": [{
-        "contents": [{
-          "type": "text",
-          "values": {
-            "containerPadding": "10px 10px 5px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#000",
-            "textAlign": "center",
-            "lineHeight": "120%",
-            "text": "<div><span style=\"color: #f10693; font-family: Pacifico, cursive; font-size: 14px; line-height: 16.8px;\"><strong><span style=\"font-size: 80px; line-height: 96px;\">Relax &amp; Plan</span></strong></span></div>"
-          }
-        }, {
-          "type": "text",
-          "values": {
-            "containerPadding": "10px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#000",
-            "textAlign": "center",
-            "lineHeight": "120%",
-            "text": "<div><span style=\"color: #6fbb7b; font-family: Pacifico, cursive; font-size: 58px; text-align: center; line-height: 69.6px;\">&nbsp;Your Summer Break</span></div>"
-          }
-        }, {
-          "type": "text",
-          "values": {
-            "containerPadding": "20px 10px 9px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#000",
-            "textAlign": "center",
-            "lineHeight": "140%",
-            "text": "<div><span style=\"font-size: 24px; color: #505050; line-height: 33.6px;\">Time to plan a vacation for your kids?</span></div>"
-          }
-        }, {
-          "type": "text",
-          "values": {
-            "containerPadding": "5px 10px 10px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#000",
-            "textAlign": "center",
-            "lineHeight": "160%",
-            "text": "<div><span style=\"font-size: 18px; line-height: 28.8px;\"><span style=\"color: #505050; font-size: 18px; line-height: 28.8px;\">Check-out our summer break offers for&nbsp;</span><span style=\"color: #505050; font-size: 18px; line-height: 28.8px;\">children who are creative, full of energy,&nbsp;</span><span style=\"color: #505050; font-size: 18px; line-height: 28.8px;\">and can&rsquo;t sit still for a minute.</span></span></div>"
-          }
-        }, {
-          "type": "divider",
-          "values": {
-            "containerPadding": "20px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "width": "100%",
-            "border": {
-              "borderTopWidth": "1px",
-              "borderTopStyle": "solid",
-              "borderTopColor": "#CCC"
-            },
-            "textAlign": "center"
-          }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "rgba(255,255,255,0)",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "10px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": true,
-        "draggable": true,
-        "deletable": true
-      }
-    }, {
-      "cells": [1],
-      "columns": [{
-        "contents": [{
-          "type": "text",
-          "values": {
-            "containerPadding": "20px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#000",
-            "textAlign": "left",
-            "lineHeight": "120%",
-            "text": "<div><strong><span style=\"font-size: 30px; font-family: Montserrat, sans-serif; color: #2790d2; line-height: 36px;\">Upcoming Events:</span></strong></div>"
-          }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "rgba(255,255,255,0)",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "0px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": true,
-        "draggable": true,
-        "deletable": true
-      }
-    }, {
-      "cells": [1, 2],
-      "columns": [{
-        "contents": [{
-          "type": "image",
-          "values": {
-            "maxWidth": "100%",
-            "src": {
-              "url": "https://a.mailmunch.co/user_data/landing_pages/1500313461528-1.png",
-              "width": 500,
-              "height": 500
-            },
-            "draggable": true,
-            "containerPadding": "0px",
-            "deletable": true,
-            "selectable": true,
-            "action": {
-              "url": "",
-              "target": ""
-            },
-            "altText": "Image",
+        ],
+        "values": {
+          "columns": false,
+          "backgroundColor": "",
+          "columnsBackgroundColor": "",
+          "backgroundImage": {
+            "url": "",
             "fullWidth": true,
-            "textAlign": "center"
-          }
-        }]
-      }, {
-        "contents": [{
-          "type": "text",
-          "values": {
-            "containerPadding": "10px 15px 8px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#6eba79",
-            "textAlign": "left",
-            "lineHeight": "160%",
-            "text": "<div><span style=\"font-size: 20px; line-height: 32px;\">JET SKI RIDE</span></div>"
-          }
-        }, {
-          "type": "text",
-          "values": {
-            "containerPadding": "10px 15px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#4f4f4f",
-            "textAlign": "left",
-            "lineHeight": "150%",
-            "text": "<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>"
-          }
-        }, {
-          "type": "button",
-          "values": {
-            "buttonColors": {
-              "color": "#FFF",
-              "backgroundColor": "#fa9302",
-              "hoverColor": "#cf7a04"
-            },
-            "calculatedHeight": 36,
-            "calculatedWidth": 132,
-            "href": "",
-            "border": {},
-            "text": "ORDER NOW<br />",
-            "draggable": true,
-            "containerPadding": "5px 15px",
-            "padding": "10px 20px",
-            "deletable": true,
-            "selectable": true,
-            "textAlign": "left",
-            "lineHeight": "120%",
-            "borderRadius": "20px"
-          }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "rgba(255,255,255,0)",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "10px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": true,
-        "draggable": true,
-        "deletable": true
+            "repeat": false,
+            "center": true,
+            "cover": false
+          },
+          "padding": "0px",
+          "hideDesktop": false,
+          "hideMobile": false,
+          "noStackMobile": false,
+          "_meta": {
+            "htmlID": "u_row_1",
+            "htmlClassNames": "u_row"
+          },
+          "selectable": true,
+          "draggable": true,
+          "duplicatable": true,
+          "deletable": true
+        }
       }
-    }, {
-      "cells": [1],
-      "columns": [{
-        "contents": [{
-          "type": "divider",
-          "values": {
-            "containerPadding": "1px 20px 5px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "width": "100%",
-            "border": {
-              "borderTopWidth": "1px",
-              "borderTopStyle": "solid",
-              "borderTopColor": "#CCC"
-            },
-            "textAlign": "center"
-          }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "rgba(255,255,255,0)",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "0px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": true,
-        "draggable": true,
-        "deletable": true
-      }
-    }, {
-      "cells": [2, 1],
-      "columns": [{
-        "contents": [{
-          "type": "text",
-          "values": {
-            "containerPadding": "10px 15px 8px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#6eba79",
-            "textAlign": "left",
-            "lineHeight": "160%",
-            "text": "<div><span style=\"font-size: 20px; line-height: 32px;\">BOAT RIDE</span></div>"
-          }
-        }, {
-          "type": "text",
-          "values": {
-            "containerPadding": "10px 15px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#4f4f4f",
-            "textAlign": "left",
-            "lineHeight": "150%",
-            "text": "<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>"
-          }
-        }, {
-          "type": "button",
-          "values": {
-            "buttonColors": {
-              "color": "#FFF",
-              "backgroundColor": "#fa9302",
-              "hoverColor": "#cf7a04"
-            },
-            "calculatedHeight": 36,
-            "calculatedWidth": 132,
-            "href": "",
-            "border": {},
-            "text": "ORDER NOW<br />",
-            "draggable": true,
-            "containerPadding": "5px 15px",
-            "padding": "10px 20px",
-            "deletable": true,
-            "selectable": true,
-            "textAlign": "left",
-            "lineHeight": "120%",
-            "borderRadius": "20px"
-          }
-        }]
-      }, {
-        "contents": [{
-          "type": "image",
-          "values": {
-            "maxWidth": "100%",
-            "src": {
-              "url": "https://a.mailmunch.co/user_data/landing_pages/1500313783372-2.png",
-              "width": 500,
-              "height": 500
-            },
-            "draggable": true,
-            "containerPadding": "0px",
-            "deletable": true,
-            "selectable": true,
-            "action": {
-              "url": "",
-              "target": ""
-            },
-            "altText": "Image",
-            "fullWidth": true,
-            "textAlign": "center"
-          }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "rgba(255,255,255,0)",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "10px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": true,
-        "draggable": true,
-        "deletable": true
-      }
-    }, {
-      "cells": [1],
-      "columns": [{
-        "contents": [{
-          "type": "divider",
-          "values": {
-            "containerPadding": "1px 20px 5px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "width": "100%",
-            "border": {
-              "borderTopWidth": "1px",
-              "borderTopStyle": "solid",
-              "borderTopColor": "#CCC"
-            },
-            "textAlign": "center"
-          }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "rgba(255,255,255,0)",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "0px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": true,
-        "draggable": true,
-        "deletable": true
-      }
-    }, {
-      "cells": [1, 2],
-      "columns": [{
-        "contents": [{
-          "type": "image",
-          "values": {
-            "maxWidth": "100%",
-            "src": {
-              "url": "https://a.mailmunch.co/user_data/landing_pages/1500314095876-3.png",
-              "width": 500,
-              "height": 500
-            },
-            "draggable": true,
-            "containerPadding": "0px",
-            "deletable": true,
-            "selectable": true,
-            "action": {
-              "url": "",
-              "target": ""
-            },
-            "altText": "Image",
-            "fullWidth": true,
-            "textAlign": "center"
-          }
-        }]
-      }, {
-        "contents": [{
-          "type": "text",
-          "values": {
-            "containerPadding": "10px 15px 8px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#6eba79",
-            "textAlign": "left",
-            "lineHeight": "160%",
-            "text": "<div><span style=\"font-size: 20px; line-height: 32px;\">BEACH DAY</span></div>"
-          }
-        }, {
-          "type": "text",
-          "values": {
-            "containerPadding": "10px 15px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#4f4f4f",
-            "textAlign": "left",
-            "lineHeight": "150%",
-            "text": "<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>"
-          }
-        }, {
-          "type": "button",
-          "values": {
-            "buttonColors": {
-              "color": "#FFF",
-              "backgroundColor": "#fa9302",
-              "hoverColor": "#cf7a04"
-            },
-            "calculatedHeight": 36,
-            "calculatedWidth": 132,
-            "href": "",
-            "border": {},
-            "text": "ORDER NOW<br />",
-            "draggable": true,
-            "containerPadding": "5px 15px",
-            "padding": "10px 20px",
-            "deletable": true,
-            "selectable": true,
-            "textAlign": "left",
-            "lineHeight": "120%",
-            "borderRadius": "20px"
-          }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "rgba(255,255,255,0)",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "10px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": true,
-        "draggable": true,
-        "deletable": true
-      }
-    }, {
-      "cells": [1],
-      "columns": [{
-        "contents": [{
-          "type": "divider",
-          "values": {
-            "containerPadding": "1px 20px 5px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "width": "100%",
-            "border": {
-              "borderTopWidth": "1px",
-              "borderTopStyle": "solid",
-              "borderTopColor": "#CCC"
-            },
-            "textAlign": "center"
-          }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "rgba(255,255,255,0)",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "0px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": true,
-        "draggable": true,
-        "deletable": true
-      }
-    }, {
-      "cells": [1],
-      "columns": [{
-        "contents": [{
-          "type": "text",
-          "values": {
-            "containerPadding": "15px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#fa9302",
-            "textAlign": "center",
-            "lineHeight": "130%",
-            "text": "<div><span style=\"font-size: 36px; line-height: 46.8px;\">NEED MORE INFORMATION?</span></div>"
-          }
-        }, {
-          "type": "text",
-          "values": {
-            "containerPadding": "10px",
-            "selectable": true,
-            "draggable": true,
-            "deletable": true,
-            "color": "#4f4f4f",
-            "textAlign": "center",
-            "lineHeight": "120%",
-            "text": "<div><span style=\"font-size: 20px; line-height: 24px;\">Subscribe to get updates.</span></div>"
-          }
-        }, {
-          "type": "button",
-          "values": {
-            "buttonColors": {
-              "color": "#FFF",
-              "backgroundColor": "#6eba79",
-              "hoverColor": "#58a864"
-            },
-            "calculatedHeight": 52,
-            "calculatedWidth": 214,
-            "href": "",
-            "border": {},
-            "text": "<span style=\"font-size: 20px; line-height: 32px;\">SUBSCRIBE NOW</span>",
-            "draggable": true,
-            "containerPadding": "20px",
-            "padding": "10px 20px",
-            "deletable": true,
-            "selectable": true,
-            "textAlign": "center",
-            "lineHeight": "160%",
-            "borderRadius": "37px"
-          }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "rgba(255,255,255,0)",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "10px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": true,
-        "draggable": true,
-        "deletable": true
-      }
-    }, {
-      "cells": [1],
-      "columns": [{
-        "contents": [{
-          "type": "text",
-          "values": {
-            "containerPadding": "20px",
-            "selectable": false,
-            "draggable": false,
-            "deletable": false,
-            "color": "#000",
-            "textAlign": "left",
-            "lineHeight": "120%",
-            "text": "<div style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-size: 12px; color: #999999; line-height: 14.4px;\">You received this email because you signed up for [[business_name]].</span></div>\n<div style=\"font-family: arial, helvetica, sans-serif;\">&nbsp;</div>\n<div style=\"font-family: arial, helvetica, sans-serif;\"><span style=\"font-size: 12px; color: #999999; line-height: 14.4px;\">[[{unsubscribe}]]</span></div>"
-          }
-        }]
-      }],
-      "values": {
-        "backgroundColor": "#f0f0f0",
-        "backgroundImage": {
-          "url": "",
-          "fullWidth": true,
-          "repeat": false,
-          "center": false,
-          "cover": false
-        },
-        "padding": "30px",
-        "columnsBackgroundColor": "rgba(255,255,255,0)",
-        "selectable": false,
-        "draggable": false,
-        "deletable": false
-      }
-    }],
+    ],
     "values": {
       "backgroundColor": "#ffffff",
       "backgroundImage": {
@@ -636,13 +180,26 @@
         "center": true,
         "cover": false
       },
-      "contentWidth": "600px",
+      "contentWidth": "500px",
       "fontFamily": {
-        "label": "Montserrat",
-        "value": "'Montserrat',sans-serif",
-        "type": "google",
-        "weights": "400,700"
+        "label": "Helvetica",
+        "value": "helvetica,sans-serif",
+        "url": "",
+        "defaultFont": true
+      },
+      "linkStyle": {
+        "body": true,
+        "linkColor": "#0000ee",
+        "linkHoverColor": "#0000ee",
+        "linkUnderline": true,
+        "linkHoverUnderline": true,
+        "inherit": false
+      },
+      "_meta": {
+        "htmlID": "u_body",
+        "htmlClassNames": "u_body"
       }
     }
-  }
+  },
+  "schemaVersion": 5
 }

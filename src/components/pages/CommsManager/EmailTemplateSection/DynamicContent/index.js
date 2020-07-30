@@ -5,16 +5,8 @@ function DynamicContentDropdown(props) {
   const { onChange, className, email_dynamic_content } = props;
   const options = [
     {
-      id: 'Order ID',
-      title: 'Order ID'
-    },
-    {
-      id: 'Order Date',
-      title: 'Order Date'
-    },
-    {
-      id: 'Delivery Date',
-      title: 'Delivery Date'
+      id: 'Delivery Schedule Reminder Template',
+      title: 'Delivery Schedule Reminder Template'
     }
   ]
   return (
