@@ -14,12 +14,12 @@ import {
 const emailTextBoxId  = "email_text";
 
 function EmailTemplateSection(props) {
-    const { onChange, dynamic_content, onSubmit, ...inputs} = props;
+    const { onChange, email_dynamic_content, onSubmit, ...inputs} = props;
     const [currentId, setCurrentId] = useState('');
     useEffect(() => {
-      if (dynamic_content) {
-        const smsData = inputs[emailTextBoxId];
-        const appendedDynamicContent = `${smsData}<span> ${dynamic_content}</span>`;
+      if (email_dynamic_content) {
+        const smsData = inputs[emailTextBoxId] || '';
+        const appendedDynamicContent = `${smsData}<span> ${email_dynamic_content}</span>`;
         onChange({
           target: {
             value: appendedDynamicContent,
@@ -28,13 +28,13 @@ function EmailTemplateSection(props) {
         })
         setCurrentId(uuidv4());
       }
-    }, [dynamic_content]);
+    }, [email_dynamic_content]);
     return (
       <Section title="E-mail Template Editor">
         <StyledSectionContainer>
           <StyledContent>
             <StyledQuill refreshData={currentId} value={inputs[emailTextBoxId]} onChange={onChange} id={emailTextBoxId} />
-            <StyledDynamicDropDown dynamic_content={dynamic_content} onChange={onChange} />
+            <StyledDynamicDropDown email_dynamic_content={email_dynamic_content} onChange={onChange} />
           </StyledContent>
           <StyledFooter>
             <StyledEmailTriggers {...inputs} onChange={onChange}/>

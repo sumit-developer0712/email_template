@@ -18,7 +18,7 @@ function SmsTemplateSection(props) {
     const [currentId, setCurrentId] = useState('');
     useEffect(() => {
       if (dynamic_content) {
-        const smsData = inputs[smsTextBoxId];
+        const smsData = inputs[smsTextBoxId] || '';
         const appendedDynamicContent = `${smsData}<span> ${dynamic_content}</span>`;
         onChange({
           target: {

@@ -15,7 +15,11 @@ class CommsManagerPage extends React.Component {
       email: '',
       print: '',
       voice: '',
-      appnotification: ''
+      appnotification: '',
+      email_order_types: '',
+      email_order_checker: '',
+      email_order_status: '',
+      email_dynamic_content: '',
     }
   }
 
