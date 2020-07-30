@@ -1,25 +1,57 @@
-import React, { useState } from "react";
-import ReactQuill from 'react-quill';
-import { StyledContainer, StyledHeader, StyledButtonContainer, StyledView } from './styled';
-import Button from 'react-bootstrap/Button';
-import 'react-quill/dist/quill.snow.css';
+import React from 'react';
+import EmailEditor from 'react-email-editor';
+import { StyledButton, Container } from './styled';
 
-function EmailEditor() {
-  const [value, setValue] = useState('');
+class EditorEmail extends React.Component {
+  constructor(props) {
+    super(props)
+    this.emailEditor = React.createRef();
+    this.state = {
+      loadNewData: {}
+    }
+  }
 
-  return (
-    <>
-      <StyledHeader />
-      <StyledView>
-        <StyledContainer>
-          <ReactQuill theme="snow" value={value} onChange={setValue}/>
-          <StyledButtonContainer>
-            <Button variant="secondary">Submit</Button>
-          </StyledButtonContainer>
-        </StyledContainer>
-      </StyledView>
-    </>
-  );
-};
+  static getDerivedStateFromProps(props, state) {
+    if (props.loadNewData.length > 1 && (props.loadNewData !== state.loadNewData)) {
+      return {
+        newJsonData: props.newEmailJson,
+        loadNewData: props.loadNewData
+      }
+    }
+  }
 
-export default EmailEditor;
+  shouldComponentUpdate(nextProps, nextState) {
+    if (Object.keys(nextState.loadNewData).length > 0 && (nextState.loadNewData !== this.state.loadNewData)) {
+      this.emailEditor.current.loadDesign(nextState.newJsonData);
+    }
+  }
+
+  saveDesign = () => {
+    const { name, onSubmit } = this.props;
+    this.emailEditor.current.exportHtml((data) => {
+      const { design, html } = data;
+      const event = {
+        target: {
+          name,
+          json: design,
+          html
+        }
+      }
+      onSubmit(event);
+    })
+  }
+
+  render() {
+    return (
+      <Container>
+        <StyledButton variant="secondary" onClick={this.saveDesign}>Submit Email</StyledButton>
+        <EmailEditor
+          ref={this.emailEditor}
+          onLoad={this.onLoad}
+        />
+      </Container>
+    );
+  }
+}
+
+export default EditorEmail;

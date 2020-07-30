@@ -1,26 +1,15 @@
 import styled from 'styled-components';
-import { LOWEL_BLUE } from '../../../../shared/constants';
+import Button from 'react-bootstrap/Button';
 
-export const StyledView = styled.div`
-  margin: 20px 12px 20px 12px;
+export const StyledButton = styled(Button)`
+  width: 150px;
+  margin-left: auto;
+  margin-bottom: 30px;
 `;
 
-export const StyledContainer = styled.div`
-  margin: 20px 0;
-  width: 40%;
-  .quill {
-    margin-bottom: 60px;
-    height: 200px;
-  }
-`;
-
-export const StyledHeader = styled.div`
-  background-color: ${LOWEL_BLUE};
-  height: 50px;
-`;
-
-export const StyledButtonContainer = styled.div`
-  button {
-    float: right;
-  }
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
 `;
