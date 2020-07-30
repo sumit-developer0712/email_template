@@ -31,7 +31,7 @@ class Quill extends React.Component {
   }
  
   render() {
-    const { className, title, id } = this.props;
+    const { noModules, noFormats, className, title, id } = this.props;
     return (
       <StyledContainer>
         {title && <StyledLabel id={id}>{title}</StyledLabel>}
@@ -40,10 +40,41 @@ class Quill extends React.Component {
           className={className}
           value={this.state.text}
           onChange={this.handleChange}
+          theme={this.state.theme}
+          modules={!noModules? Quill.modules:{}}
+          formats={!noFormats? Quill.formats:{}}
+          bounds={'.app'}
+          placeholder={this.props.placeholder}
         />
       </StyledContainer>
     )
   }
 }
+
+Quill.modules = {
+  toolbar: [
+    [{ 'header': '1'}, {'header': '2'}, { 'font': [] }],
+    [{size: []}],
+    ['bold', 'italic', 'underline', 'strike', 'blockquote'],
+    [{'list': 'ordered'}, {'list': 'bullet'}, 
+     {'indent': '-1'}, {'indent': '+1'}],
+    ['link', 'image', 'video'],
+    ['clean']
+  ],
+  clipboard: {
+    // toggle to add extra line breaks when pasting HTML:
+    matchVisual: false,
+  }
+}
+/* 
+ * Quill editor formats
+ * See https://quilljs.com/docs/formats/
+ */
+Quill.formats = [
+  'header', 'font', 'size',
+  'bold', 'italic', 'underline', 'strike', 'blockquote',
+  'list', 'bullet', 'indent',
+  'link', 'image', 'video'
+]
 
 export default Quill;
