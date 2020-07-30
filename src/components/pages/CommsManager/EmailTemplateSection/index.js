@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Section from '../../../modules/Section';
+import { dataSuffixer } from '../../../../shared/helper';
 import {
   StyledQuill,
   StyledSectionContainer,
@@ -18,8 +19,9 @@ function EmailTemplateSection(props) {
     const [currentId, setCurrentId] = useState('');
     useEffect(() => {
       if (email_dynamic_content) {
-        const smsData = inputs[emailTextBoxId] || '';
-        const appendedDynamicContent = `${smsData}<span> ${email_dynamic_content}</span>`;
+        const emailData = inputs[emailTextBoxId] || '';
+        const appendedDynamicContent = dataSuffixer(email_dynamic_content, emailData);
+        // const appendedDynamicContent = `${smsData}<span> &#36;&#123;${email_dynamic_content}&#125;</span>`;
         onChange({
           target: {
             value: appendedDynamicContent,

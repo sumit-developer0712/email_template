@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import Section from '../../../modules/Section';
+import { dataSuffixer } from '../../../../shared/helper';
 import {
   StyledQuill,
   StyledSectionContainer,
@@ -19,7 +20,7 @@ function SmsTemplateSection(props) {
     useEffect(() => {
       if (dynamic_content) {
         const smsData = inputs[smsTextBoxId] || '';
-        const appendedDynamicContent = `${smsData}<span> ${dynamic_content}</span>`;
+        const appendedDynamicContent = dataSuffixer(dynamic_content, smsData);
         onChange({
           target: {
             value: appendedDynamicContent,
