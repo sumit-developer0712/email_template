@@ -7,6 +7,8 @@ import {
   StyledSectionContainer,
   StyledContent,
   StyledDynamicDropDown,
+  StyledEmailContentDropDown,
+  StylyedDropDownContainer,
   StyledEmailTriggers,
   StyledFooter
 } from './styled';
@@ -16,7 +18,7 @@ import sample from '../../../../assets/sample.json';
 const emailTextBoxId  = "email_text";
 
 function EmailTemplateSection(props) {
-    const { onChange, email_dynamic_content, onSubmit, ...inputs} = props;
+    const { onChange, email_dynamic_content, email_content_loader, onSubmit, ...inputs} = props;
     const [currentId, setCurrentId] = useState('');
     useEffect(() => {
       if (email_dynamic_content) {
@@ -35,8 +37,12 @@ function EmailTemplateSection(props) {
       <Section title="E-mail Template Editor">
         <StyledSectionContainer>
           <StyledContent>
-            <EmailEditor name="email_submit" onSubmit={onSubmit} loadNewData={currentId} newEmailJson={sample} />
-            <StyledDynamicDropDown email_dynamic_content={email_dynamic_content} onChange={onChange} />
+            <div id="email_placeholder" />
+            <StylyedDropDownContainer>
+              <StyledEmailContentDropDown email_content_loader={email_content_loader} onChange={onChange} />
+              {/* <EmailEditor name="email_submit" onSubmit={onSubmit} loadNewData={currentId} newEmailJson={sample} /> */}
+              <StyledDynamicDropDown email_dynamic_content={email_dynamic_content} onChange={onChange} />
+            </StylyedDropDownContainer>
           </StyledContent>
           <StyledFooter>
             <StyledEmailTriggers {...inputs} onChange={onChange}/>

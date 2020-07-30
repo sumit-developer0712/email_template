@@ -13,3 +13,12 @@ export const Container = styled.div`
   position: relative;
   height: 100%;
 `;
+
+export const WaterMarkMasker = styled.div`
+  position: absolute;
+  width: 350px;
+  height: 49px;
+  right: 0;
+  bottom: 0;
+  background-color: #d9d9d9;
+`;

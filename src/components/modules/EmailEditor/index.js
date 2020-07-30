@@ -1,6 +1,6 @@
 import React from 'react';
 import EmailEditor from 'react-email-editor';
-import { StyledButton, Container } from './styled';
+import { StyledButton, Container, WaterMarkMasker } from './styled';
 
 class EditorEmail extends React.Component {
   constructor(props) {
@@ -44,6 +44,7 @@ class EditorEmail extends React.Component {
   render() {
     return (
       <Container>
+        {/* <WaterMarkMasker /> */}
         <StyledButton variant="secondary" onClick={this.saveDesign}>Submit Email</StyledButton>
         <EmailEditor
           ref={this.emailEditor}

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Quill from '../../../../modules/Quill';
 import DynamicContent from '../DynamicContent';
+import EmailContentDropDown from '../EmailContentLoader';
 import EmailTriggers from '../EmailTriggers';
 import { LOWEL_DARKER_GRAY } from '../../../../../shared/constants';
 import Button from 'react-bootstrap/Button';
@@ -20,8 +21,15 @@ export const StyledContent = styled.div`
   align-items: center;
 `;
 
+export const StylyedDropDownContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 200px;
+`;
+
 export const StyledDynamicDropDown = styled(DynamicContent)`
-  margin: auto;
+  margin: 20px auto;
   button {
     background-color: ${LOWEL_DARKER_GRAY};
     border-color: ${LOWEL_DARKER_GRAY};
@@ -31,6 +39,18 @@ export const StyledDynamicDropDown = styled(DynamicContent)`
     }
   }
 `;
+
+export const StyledEmailContentDropDown = styled(EmailContentDropDown)`
+  margin: 20px auto;
+  button {
+    background-color: ${LOWEL_DARKER_GRAY};
+    border-color: ${LOWEL_DARKER_GRAY};
+    &:hover {
+      background-color: ${LOWEL_DARKER_GRAY};
+      border-color: ${LOWEL_DARKER_GRAY};
+    }
+  }
+`
 
 export const StyledEmailTriggers = styled(EmailTriggers)`
 
