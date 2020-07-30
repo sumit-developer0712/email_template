@@ -5,6 +5,6 @@ export const dataSuffixer = (conntentToAppend, currentValue) => {
   const strReverseSplitData = strData.split('').reverse();
   const occuranceOfTag = strReverseSplitData.indexOf('<');
   const subSplitterIndex = strSplitDataLength - occuranceOfTag - 1;
-  const appendedDynamicContent = strData.substring(0, subSplitterIndex) + ` &#36;&#123;${conntentToAppend}&#125;` + strData.substring(subSplitterIndex, strSplitDataLength);
+  const appendedDynamicContent = strData.substring(0, subSplitterIndex) + `${conntentToAppend}` + strData.substring(subSplitterIndex, strSplitDataLength);
   return appendedDynamicContent
 };

@@ -12,7 +12,7 @@ function DynamicContentDropdown(props) {
   return (
     <DropDown
       className={className}
-      name="Dynamic Content"
+      name="Sample Email Template"
       id="email_dynamic_content"
       options={options}
       onChange={onChange}
