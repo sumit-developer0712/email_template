@@ -1,23 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import Section from '../../../modules/Section';
 import {
   StyledQuill,
   StyledSectionContainer,
   StyledContent,
   StyledDynamicDropDown,
-  StyledSMSTriggers
+  StyledSMSTriggers,
+  StyledFooter,
+  StyledSubmit
 } from './styled';
+
+const smsTextBoxId  = "sms_text";
 
 function SmsTemplateSection(props) {
     const { onChange, dynamic_content, ...inputs } = props;
+    const [currentId, setCurrentId] = useState('');
+    useEffect(() => {
+      if (dynamic_content) {
+        const smsData = inputs[smsTextBoxId];
+        const appendedDynamicContent = `${smsData}<span> ${dynamic_content}</span>`;
+        onChange({
+          target: {
+            value: appendedDynamicContent,
+            name: smsTextBoxId
+          }
+        })
+        setCurrentId(uuidv4());
+      }
+    }, [dynamic_content]);
     return (
       <Section title="SMS Template Editor">
         <StyledSectionContainer>
           <StyledContent>
-            <StyledQuill onChange={onChange} id="sms_text" title="SMS Text" />
+            <StyledQuill refreshData={currentId} value={inputs[smsTextBoxId]} onChange={onChange} id={smsTextBoxId} title="SMS Text" />
             <StyledDynamicDropDown dynamic_content={dynamic_content} onChange={onChange} />
           </StyledContent>
-          <StyledSMSTriggers {...inputs} onChange={onChange}/>
+          <StyledFooter>
+            <StyledSMSTriggers {...inputs} onChange={onChange}/>
+            <StyledSubmit variant="secondary" type="submit">
+              {'Submit'}
+            </StyledSubmit>
+          </StyledFooter>
         </StyledSectionContainer>
       </Section>
     )

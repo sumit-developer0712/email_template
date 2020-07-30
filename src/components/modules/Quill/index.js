@@ -9,6 +9,15 @@ class Quill extends React.Component {
     this.state = { text: '' };
     this.handleChange = this.handleChange.bind(this);
   }
+
+  static getDerivedStateFromProps(props, state) {
+    if (props.refreshData.length > 1 && (props.refreshData !== state.refreshData)) {
+      return {
+        text: props.value,
+        refreshData: props.refreshData
+      }
+    }
+  }
  
   handleChange(value) {
     const { onChange, id } = this.props;

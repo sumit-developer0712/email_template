@@ -3,6 +3,7 @@ import Quill from '../../../../modules/Quill';
 import DynamicContent from '../DynamicContent';
 import SMSTriggers from '../SMSTriggers';
 import { LOWEL_DARKER_GRAY } from '../../../../../shared/constants';
+import Button from 'react-bootstrap/Button';
 
 export const StyledQuill = styled(Quill)`
   height: 100px;
@@ -33,4 +34,14 @@ export const StyledDynamicDropDown = styled(DynamicContent)`
 
 export const StyledSMSTriggers = styled(SMSTriggers)`
 
+`;
+
+export const StyledFooter = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const StyledSubmit = styled(Button)`
+ margin-left: auto;
+ margin-right: 30px;
 `;

@@ -18,6 +18,7 @@ class CommsManagerPage extends React.Component {
       appnotification: ''
     }
   }
+
   onChange = (e) => {
     const { name, value, checked, id } = e.target;
     const currentState = { ...this.state.inputs };
@@ -26,11 +27,15 @@ class CommsManagerPage extends React.Component {
       inputs: {...currentState}
     });
   }
+
+  onSubmit = (e) => {
+  }
+
   render() {
     const { inputs } = this.state;
     return (
       <>
-        <form onChange={this.onChange}>
+        <form onChange={this.onChange} onSubmit={(e) => { e.preventDefault(); this.onSubmit(e); }}>
           <StyledTemplateSection {...inputs} />
           <StyledCommModeSection {...inputs} />
           <StyledSmsTemplateSection onChange={this.onChange} {...inputs} />
