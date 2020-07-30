@@ -1,0 +1,6365 @@
+[
+    {
+        "": ""
+    },
+    {
+        "": "                            your delivery is scheduled for {promisedapptstartdate?date?string.mmmm} {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedapptstartdate?date?string.mmmm} {promisedapptstartdate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            on the way"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            address"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "\t\t\t\t\t\t\t{delivertocompanyname}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if delivertofirstname?? && (delivertomiddlename?has_content || delivertolastname?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{delivertofirstname} {delivertomiddlename} {delivertolastname}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{delivertofirstname}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if delivertoaddressline1??>"
+    },
+    {
+        "": "                            {delivertoaddressline1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if delivertoaddressline2?has_content>"
+    },
+    {
+        "": "                            {delivertoaddressline2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {delivertostate} {delivertozip}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "             \t\t        "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                           "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                delivery item(s)"
+    },
+    {
+        "": "                                                qty"
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:products_details'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:qtyordered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {storestate} {storephone}"
+    },
+    {
+        "": " view our billing policy."
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedapptstartdate?date?string.mmmm} {promisedapptstartdate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": "qty"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:products_details'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:qtyordered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": " "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": " {products['ns3:qtyordered']}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    view our privacy statement."
+    },
+    {
+        "": " llc."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    view our privacy statement."
+    },
+    {
+        "": " llc."
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            your delivery is scheduled for {promisedapptstartdate?date?string.mmmm} {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedapptstartdate?date?string.mmmm} {promisedapptstartdate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            on the way"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            address"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "\t\t\t\t\t\t\t{delivertocompanyname}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if delivertofirstname?? && (delivertomiddlename?has_content || delivertolastname?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{delivertofirstname} {delivertomiddlename} {delivertolastname}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{delivertofirstname}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if delivertoaddressline1??>"
+    },
+    {
+        "": "                            {delivertoaddressline1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if delivertoaddressline2?has_content>"
+    },
+    {
+        "": "                            {delivertoaddressline2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {delivertostate} {delivertozip}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "             \t\t        "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                           "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                delivery item(s)"
+    },
+    {
+        "": "                                                qty"
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:products_details'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:qtyordered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {storestate} {storephone}"
+    },
+    {
+        "": " view our billing policy."
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedapptstartdate?date?string.mmmm} {promisedapptstartdate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": "qty"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:products_details'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:qtyordered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": " "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": " {products['ns3:qtyordered']}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    view our privacy statement."
+    },
+    {
+        "": " llc."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    view our privacy statement."
+    },
+    {
+        "": " llc."
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            your delivery is scheduled for {promisedapptstartdate?date?string.mmmm} {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedapptstartdate?date?string.mmmm} {promisedapptstartdate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            on the way"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            address"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "\t\t\t\t\t\t\t{delivertocompanyname}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if delivertofirstname?? && (delivertomiddlename?has_content || delivertolastname?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{delivertofirstname} {delivertomiddlename} {delivertolastname}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{delivertofirstname}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if delivertoaddressline1??>"
+    },
+    {
+        "": "                            {delivertoaddressline1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if delivertoaddressline2?has_content>"
+    },
+    {
+        "": "                            {delivertoaddressline2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {delivertostate} {delivertozip}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "             \t\t        "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                           "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                delivery item(s)"
+    },
+    {
+        "": "                                                qty"
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:products_details'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:qtyordered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {storestate} {storephone}"
+    },
+    {
+        "": " view our billing policy."
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedapptstartdate?date?string.mmmm} {promisedapptstartdate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": "qty"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:products_details'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:qtyordered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": " "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": " {products['ns3:qtyordered']}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedapptstartdate?date?string.mmmm} {promisedapptstartdate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.mmmm}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedapptstartdate?date?string.eeee}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            delivery window"
+    },
+    {
+        "": "                                                               {promisedapptstarttime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "qty"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:products_details'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:qtyordered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": " "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": " {products['ns3:qtyordered']}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": " "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:itemdesc']}"
+    },
+    {
+        "": "                                         item #: {products['ns3:itemnumber']}| model #: {products['ns3:modelnumber']}"
+    },
+    {
+        "": " {products['ns3:qtyordered']}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    view our privacy statement."
+    },
+    {
+        "": " llc."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    view our privacy statement."
+    },
+    {
+        "": " llc."
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    view our privacy statement."
+    },
+    {
+        "": " llc."
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "            "
+    },
+    {
+        "": "              "
+    },
+    {
+        "": "                "
+    },
+    {
+        "": "                  "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            Your Delivery Is Scheduled for {promisedApptStartDate?date?string.MMMM} {promisedApptStartDate?date?string.dd}"
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.MMMM}"
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.EEEE}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    Your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedApptStartDate?date?string.MMMM} {promisedApptStartDate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            On the Way"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            Address"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "             \t\t        "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                           "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                Delivery Item(s)"
+    },
+    {
+        "": "                                                QTY"
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:PRODUCTS_DETAILS'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:ItemDesc']}"
+    },
+    {
+        "": "                                         Item #: {products['ns3:ItemNumber']}| Model #: {products['ns3:ModelNumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:QtyOrdered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {storeState} {storePhone}"
+    },
+    {
+        "": " view our billing policy."
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    View our Privacy Statement."
+    },
+    {
+        "": " LLC."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                  "
+    },
+    {
+        "": "                "
+    },
+    {
+        "": "              "
+    },
+    {
+        "": "            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            Your Delivery Is Scheduled for {promisedApptStartDate?date?string.MMMM} {promisedApptStartDate?date?string.dd}"
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.MMMM}"
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.EEEE}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    Your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedApptStartDate?date?string.MMMM} {promisedApptStartDate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            On the Way"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            Address"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "             \t\t        "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                           "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                Delivery Item(s)"
+    },
+    {
+        "": "                                                QTY"
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:PRODUCTS_DETAILS'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:ItemDesc']}"
+    },
+    {
+        "": "                                         Item #: {products['ns3:ItemNumber']}| Model #: {products['ns3:ModelNumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:QtyOrdered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {storeState} {storePhone}"
+    },
+    {
+        "": " view our billing policy."
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    View our Privacy Statement."
+    },
+    {
+        "": " LLC."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": ""
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            Your Delivery Is Scheduled for {promisedApptStartDate?date?string.MMMM} {promisedApptStartDate?date?string.dd}"
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.MMMM}"
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.EEEE}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    Your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedApptStartDate?date?string.MMMM} {promisedApptStartDate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            On the Way"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            Address"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "             \t\t        "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                           "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                Delivery Item(s)"
+    },
+    {
+        "": "                                                QTY"
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:PRODUCTS_DETAILS'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:ItemDesc']}"
+    },
+    {
+        "": "                                         Item #: {products['ns3:ItemNumber']}| Model #: {products['ns3:ModelNumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:QtyOrdered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {storeState} {storePhone}"
+    },
+    {
+        "": " view our billing policy."
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    View our Privacy Statement."
+    },
+    {
+        "": " LLC."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": ""
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": ""
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            Your Delivery Is Scheduled for {promisedApptStartDate?date?string.MMMM} {promisedApptStartDate?date?string.dd}"
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.MMMM}"
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.dd}"
+    },
+    {
+        "": "                                            {promisedApptStartDate?date?string.EEEE}"
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                  "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                              "
+    },
+    {
+        "": "                                            "
+    },
+    {
+        "": "                                          "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                      "
+    },
+    {
+        "": "                                    "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    Your delivery has been scheduled for"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                    {promisedApptStartDate?date?string.MMMM} {promisedApptStartDate?date?string.dd}."
+    },
+    {
+        "": " please call the store fulfilling your item(s) listed below."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            On the Way"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            Address"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "             \t\t        "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                           "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                Delivery Item(s)"
+    },
+    {
+        "": "                                                QTY"
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                                                "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": "                                   <#list xml['//ns3:PRODUCTS_DETAILS'] as products>"
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                        "
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                       {products['ns3:ItemDesc']}"
+    },
+    {
+        "": "                                         Item #: {products['ns3:ItemNumber']}| Model #: {products['ns3:ModelNumber']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                        {products['ns3:QtyOrdered']}"
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                       "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                     "
+    },
+    {
+        "": "                                   "
+    },
+    {
+        "": "                                 "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {storeState} {storePhone}"
+    },
+    {
+        "": " view our billing policy."
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                    View our Privacy Statement."
+    },
+    {
+        "": " LLC."
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                  "
+    },
+    {
+        "": "                                "
+    },
+    {
+        "": "                              "
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                          "
+    },
+    {
+        "": "                        "
+    },
+    {
+        "": "                      "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": ""
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": ""
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": ""
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": "                                                        "
+    },
+    {
+        "": "                                                      "
+    },
+    {
+        "": "                                                    "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "                                                            Delivery Window"
+    },
+    {
+        "": "                                                               {promisedApptStartTime?time?string["
+    },
+    {
+        "": "                                                          "
+    },
+    {
+        "": ""
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToCompanyName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#if deliverToFirstName?? && (deliverToMiddleName?has_content || deliverToLastName?has_content)>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName} {deliverToMiddleName} {deliverToLastName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t<#else>"
+    },
+    {
+        "": "\t\t\t\t\t\t\t{deliverToFirstName}"
+    },
+    {
+        "": "\t\t\t\t\t\t\t"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine1??>"
+    },
+    {
+        "": "                            {deliverToAddressLine1}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": "                            <#if deliverToAddressLine2?has_content>"
+    },
+    {
+        "": "                            {deliverToAddressLine2}"
+    },
+    {
+        "": "                            "
+    },
+    {
+        "": " {deliverToState} {deliverToZip}"
+    }
+]
