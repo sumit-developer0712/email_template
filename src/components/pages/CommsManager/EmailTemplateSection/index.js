@@ -12,6 +12,8 @@ import {
   StyledSubmit
 } from './styled';
 
+import App from '../../../modules/ReactEmailEditor';
+
 const emailTextBoxId  = "email_text";
 
 function EmailTemplateSection(props) {
@@ -35,7 +37,8 @@ function EmailTemplateSection(props) {
       <Section title="E-mail Template Editor">
         <StyledSectionContainer>
           <StyledContent>
-            <StyledQuill refreshData={currentId} value={inputs[emailTextBoxId]} onChange={onChange} id={emailTextBoxId} />
+            {/* <StyledQuill refreshData={currentId} value={inputs[emailTextBoxId]} onChange={onChange} id={emailTextBoxId} /> */}
+            <App />
             <StyledDynamicDropDown email_dynamic_content={email_dynamic_content} onChange={onChange} />
           </StyledContent>
           <StyledFooter>
