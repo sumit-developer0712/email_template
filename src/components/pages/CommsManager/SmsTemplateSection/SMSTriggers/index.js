@@ -44,6 +44,10 @@ function SMSTriggers(props) {
     {
       id:'pickup_confirmed',
       title: 'Pickup Confirmed'
+    },
+    {
+      id:'order_confirmed',
+      title: 'Order Confirmed'
     }
   ];
   return (
