@@ -5,28 +5,16 @@ function DynamicContentDropdown(props) {
   const { onChange, className, dynamic_content } = props;
   const options = [
     {
-      id: 'Order_ID_Sterling',
-      title: 'Order_ID_Sterling'
+      id: 'OrderID',
+      title: 'Order ID'
     },
     {
-      id: 'Order_ID_Genesis',
-      title: 'Order_ID_Genesis'
+      id: 'OrderDt',
+      title: 'Order Date'
     },
     {
-      id: 'Order_Date',
-      title: 'Order_Date'
-    },
-    {
-      id: 'Delivery_date',
-      title: 'Delivery_date'
-    },
-    {
-      id: 'User_Name',
-      title: 'User_Name'
-    },
-    {
-      id: 'Total_units',
-      title: 'Total_units'
+      id: 'DeliveryDt',
+      title: 'Delivery Date'
     }
   ]
   return (
