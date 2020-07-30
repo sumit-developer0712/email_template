@@ -34,7 +34,7 @@ function SmsTemplateSection(props) {
       <Section title="SMS Template Editor">
         <StyledSectionContainer>
           <StyledContent>
-            <StyledQuill refreshData={currentId} value={inputs[smsTextBoxId]} onChange={onChange} id={smsTextBoxId} title="SMS Text" />
+            <StyledQuill refreshData={currentId} noModules noFormats value={inputs[smsTextBoxId]} onChange={onChange} id={smsTextBoxId} title="SMS Text" />
             <StyledDynamicDropDown dynamic_content={dynamic_content} onChange={onChange} />
           </StyledContent>
           <StyledFooter>

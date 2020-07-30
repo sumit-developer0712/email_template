@@ -4,18 +4,18 @@ import DropDown from '../../../../grains/dropdown';
 function DynamicContentDropdown(props) {
   const { onChange, className, email_dynamic_content } = props;
   const options = [
-      {
-        id: 'OrderID',
-        title: 'Order ID'
-      },
-      {
-        id: 'OrderDt',
-        title: 'Order Date'
-      },
-      {
-        id: 'DeliveryDt',
-        title: 'Delivery Date'
-      }
+    {
+      id: 'Order ID',
+      title: 'Order ID'
+    },
+    {
+      id: 'Order Date',
+      title: 'Order Date'
+    },
+    {
+      id: 'Delivery Date',
+      title: 'Delivery Date'
+    }
   ]
   return (
     <DropDown

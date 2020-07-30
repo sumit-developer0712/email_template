@@ -5,15 +5,15 @@ function DynamicContentDropdown(props) {
   const { onChange, className, dynamic_content } = props;
   const options = [
     {
-      id: 'OrderID',
+      id: 'Order ID',
       title: 'Order ID'
     },
     {
-      id: 'OrderDt',
+      id: 'Order Date',
       title: 'Order Date'
     },
     {
-      id: 'DeliveryDt',
+      id: 'Delivery Date',
       title: 'Delivery Date'
     }
   ]
