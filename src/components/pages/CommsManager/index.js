@@ -35,11 +35,11 @@ class CommsManagerPage extends React.Component {
     const { inputs } = this.state;
     return (
       <>
-        <form onChange={this.onChange} onSubmit={(e) => { e.preventDefault(); this.onSubmit(e); }}>
+        <form onChange={this.onChange} >
           <StyledTemplateSection {...inputs} />
           <StyledCommModeSection {...inputs} />
-          <StyledSmsTemplateSection onChange={this.onChange} {...inputs} />
-          <StyledEmailTemplateSection {...inputs} />
+          <StyledSmsTemplateSection onChange={this.onChange} onSubmit={this.onSubmit} {...inputs} />
+          <StyledEmailTemplateSection onChange={this.onChange} onSubmit={this.onSubmit} {...inputs} />
         </form>
       </>
     )

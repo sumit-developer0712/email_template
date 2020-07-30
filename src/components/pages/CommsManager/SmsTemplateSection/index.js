@@ -14,7 +14,7 @@ import {
 const smsTextBoxId  = "sms_text";
 
 function SmsTemplateSection(props) {
-    const { onChange, dynamic_content, ...inputs } = props;
+    const { onChange, dynamic_content, onSubmit, ...inputs } = props;
     const [currentId, setCurrentId] = useState('');
     useEffect(() => {
       if (dynamic_content) {
@@ -38,8 +38,8 @@ function SmsTemplateSection(props) {
           </StyledContent>
           <StyledFooter>
             <StyledSMSTriggers {...inputs} onChange={onChange}/>
-            <StyledSubmit variant="secondary" type="submit">
-              {'Submit'}
+            <StyledSubmit name="sms_submit" variant="secondary" onClick={onSubmit}>
+              {'Submit sms'}
             </StyledSubmit>
           </StyledFooter>
         </StyledSectionContainer>
