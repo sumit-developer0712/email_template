@@ -9,15 +9,15 @@ import {
 } from './styled';
 
 function SmsTemplateSection(props) {
-    const { onChange } = props;
+    const { onChange, dynamic_content, ...inputs } = props;
     return (
       <Section title="SMS Template Editor">
         <StyledSectionContainer>
           <StyledContent>
-            <StyledQuill title="SMS Text" />
-            <StyledDynamicDropDown onChange={onChange} />
+            <StyledQuill onChange={onChange} id="sms_text" title="SMS Text" />
+            <StyledDynamicDropDown dynamic_content={dynamic_content} onChange={onChange} />
           </StyledContent>
-          <StyledSMSTriggers onChange={onChange}/>
+          <StyledSMSTriggers {...inputs} onChange={onChange}/>
         </StyledSectionContainer>
       </Section>
     )

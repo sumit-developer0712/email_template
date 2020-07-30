@@ -11,7 +11,14 @@ class Quill extends React.Component {
   }
  
   handleChange(value) {
+    const { onChange, id } = this.props;
     this.setState({ text: value });
+    onChange({
+      target: {
+        value: value,
+        name: id
+      }
+    })
   }
  
   render() {

@@ -6,11 +6,25 @@ class CommsManagerPage extends React.Component {
     inputs: {
       templateId: '',
       templateName: '',
-      templateDes: ''
+      templateDes: '',
+      order_types: '',
+      order_checker: '',
+      order_status: '',
+      dynamic_content: '',
+      sms: '',
+      email: '',
+      print: '',
+      voice: '',
+      appnotification: ''
     }
   }
   onChange = (e) => {
-    debugger
+    const { name, value, checked, id } = e.target;
+    const currentState = { ...this.state.inputs };
+    currentState[name] = value || checked || id;
+    this.setState({
+      inputs: {...currentState}
+    });
   }
   render() {
     const { inputs } = this.state;

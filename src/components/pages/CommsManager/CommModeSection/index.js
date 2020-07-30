@@ -3,7 +3,7 @@ import Section from '../../../modules/Section';
 import { StyledCheckBoxes, StyledAppCheckBoxes, StyledSectionContainer } from './styled';
 
 function CommModeSection(props) {
-  const { sms } = props;
+  const { sms, email, print, voice, appnotification } = props;
   return (
     <Section title="Communication Mode">
       <StyledSectionContainer>
@@ -11,7 +11,7 @@ function CommModeSection(props) {
           id="sms"
           labelText="SMS"
           inputType="checkbox"
-          value={sms}
+          checked={sms}
           name="sms"
           labelSuffix
         />
@@ -19,7 +19,7 @@ function CommModeSection(props) {
           id="email"
           labelText="E-mail"
           inputType="checkbox"
-          value={sms}
+          checked={email}
           name="email"
           labelSuffix
         />
@@ -27,7 +27,7 @@ function CommModeSection(props) {
           id="print"
           labelText="Print"
           inputType="checkbox"
-          value={sms}
+          checked={print}
           name="print"
           labelSuffix
         />
@@ -35,7 +35,7 @@ function CommModeSection(props) {
           id="voice"
           labelText="Voice"
           inputType="checkbox"
-          value={sms}
+          checked={voice}
           name="voice"
           labelSuffix
         />
@@ -43,7 +43,7 @@ function CommModeSection(props) {
           id="appnotification"
           labelText="App notification"
           inputType="checkbox"
-          value={sms}
+          checked={appnotification}
           name="appnotification"
           labelSuffix
         />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { withRouter } from "react-router";
-import EmailEditor from '../../../components/modules/EmailEditor';
+// import EmailEditor from '../../../components/modules/EmailEditor';
 import CommsManagerPage from '../CommsManager';
 import NavigationMenus from '../../modules/NavigationMenus';
 import { StyledHeader, StyledContainer } from './styled';
