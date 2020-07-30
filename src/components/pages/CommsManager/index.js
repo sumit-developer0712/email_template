@@ -3,6 +3,8 @@ import { StyledTemplateSection, StyledCommModeSection, StyledSmsTemplateSection,
 
 class CommsManagerPage extends React.Component {
   state = {
+    emailSubmitData: '',
+    error: false,
     inputs: {
       templateId: '',
       templateName: '',
@@ -28,7 +30,7 @@ class CommsManagerPage extends React.Component {
     const currentState = { ...this.state.inputs };
     currentState[name] = value || checked || id;
     this.setState({
-      inputs: {...currentState}
+      inputs: { ...currentState }
     });
   }
 
@@ -37,10 +39,10 @@ class CommsManagerPage extends React.Component {
     if (name === 'email_submit') {
       const payload = {
         name: 'email',
-        content: MockHtml.toString(),
+        content: '',
         message: ''
       }
-      const URL = 'http://localhost:8080/saveTemplate';
+      const URL = 'https://run.mocky.io/v3/501b6c07-3b81-4b59-a25e-d951c1b5e76d';
       const options = {
         method: 'POST',
         headers: {
@@ -51,28 +53,33 @@ class CommsManagerPage extends React.Component {
       fetch(URL, options)
         .then((res) => res.json())
         .then((response) => {
-        this.setState({
-          emailSubmitData: response
+          this.setState({
+            emailSubmitData: response
+          })
         })
-      })
-      .catch((error) => {
-        this.setState({
-          error: true
+        .catch((error) => {
+          this.setState({
+            error: true
+          })
         })
-      })
     }
   }
 
   render() {
-    const { inputs } = this.state;
+    const { inputs, error } = this.state;
     return (
       <>
-        <form onChange={this.onChange} >
-          <StyledTemplateSection {...inputs} />
-          <StyledCommModeSection {...inputs} />
-          <StyledSmsTemplateSection onChange={this.onChange} onSubmit={this.onSubmit} {...inputs} />
-          <StyledEmailTemplateSection onChange={this.onChange} onSubmit={this.onSubmit} {...inputs} />
-        </form>
+        {error
+          ? <div>
+            <h1> We shall get back to you on this feature </h1>
+          </div>
+          : <form onChange={this.onChange} >
+            <StyledTemplateSection {...inputs} />
+            <StyledCommModeSection {...inputs} />
+            <StyledSmsTemplateSection onChange={this.onChange} onSubmit={this.onSubmit} {...inputs} />
+            <StyledEmailTemplateSection onChange={this.onChange} onSubmit={this.onSubmit} {...inputs} />
+          </form>
+        }
       </>
     )
   }
