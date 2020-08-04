@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledTemplateSection, StyledCommModeSection, StyledSmsTemplateSection, StyledEmailTemplateSection } from './styled';
 import { templateHtml } from '../../../assets/templateHtml';
+import {email_api_url} from '../../../shared/constants';
 
 class CommsManagerPage extends React.Component {
   state = {
@@ -52,7 +53,7 @@ class CommsManagerPage extends React.Component {
         message: ''
       } 
     }
-    const URL = 'http://localhost:8080/saveTemplate';
+    const URL = email_api_url;
     const options = {
       method: 'POST',
       headers: {
@@ -61,7 +62,7 @@ class CommsManagerPage extends React.Component {
       body: JSON.stringify(payload)
     }
     fetch(URL, options)
-      .then((res) => res.json())
+      .then((res) => alert("Saved Successfully"))
       .then((response) => {
         this.setState({
           emailSubmitData: response
