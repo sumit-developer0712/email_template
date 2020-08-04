@@ -27,6 +27,12 @@ class CommsManagerPage extends React.Component {
     }
   }
 
+  componentDidMount() {
+    const { history } = this.props;
+    // This will give u the template ID to be loaded with
+    const templateToLoad = history.location.state?.templateId;
+  }
+
   onChange = (e) => {
     const { name, value, checked, id } = e.target;
     const currentState = { ...this.state.inputs };
@@ -37,7 +43,7 @@ class CommsManagerPage extends React.Component {
   }
 
   onSubmit = (e) => {
-    const { name } = e.target;
+    const { name, type, json, html } = e.target;
     let payload;
     if (name === 'email_submit') {
       payload = {

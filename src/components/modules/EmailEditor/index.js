@@ -1,6 +1,6 @@
 import React from 'react';
 import EmailEditor from 'react-email-editor';
-import { StyledButton, Container } from './styled';
+import { StyledButtonContainer, StyledSaveButton, StyledButton, Container } from './styled';
 
 class EditorEmail extends React.Component {
   constructor(props) {
@@ -26,15 +26,17 @@ class EditorEmail extends React.Component {
     }
   }
 
-  saveDesign = () => {
+  submitDesign = (e) => {
     const { name, onSubmit } = this.props;
+    const { name: buttonType } = e.target;
     this.emailEditor.current.exportHtml((data) => {
       const { design, html } = data;
       const event = {
         target: {
           name,
           json: design,
-          html
+          html,
+          type: buttonType
         }
       }
       onSubmit(event);
@@ -44,7 +46,10 @@ class EditorEmail extends React.Component {
   render() {
     return (
       <Container>
-        <StyledButton variant="secondary" onClick={this.saveDesign}>Submit Email</StyledButton>
+        <StyledButtonContainer>
+          <StyledSaveButton name="save" variant="secondary" onClick={this.submitDesign}>Save Email</StyledSaveButton>
+          <StyledButton name="submit" variant="secondary" onClick={this.submitDesign}>Submit Email</StyledButton>
+        </StyledButtonContainer>
         <EmailEditor
           ref={this.emailEditor}
           onLoad={this.onLoad}

@@ -13,7 +13,7 @@ function NavigationMenus(props) {
         title: 'Create New Communication'
       },
       {
-        id: '/update',
+        id: '/templates',
         title: 'Update Existing Communication'
       },
       {

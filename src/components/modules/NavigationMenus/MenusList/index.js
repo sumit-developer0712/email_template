@@ -5,8 +5,8 @@ import { StyledNavContainer, StyledDropdown } from './styled';
 function MenusList(props) {
   const { name, menuIcon, id, options = [], history } = props;
   function onMenuItemSelect(e) {
-    debugger
-    history.push()
+    const { id } = e.target
+    history.push(id)
   }
   return (
     <StyledNavContainer>
