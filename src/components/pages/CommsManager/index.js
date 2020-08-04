@@ -7,6 +7,7 @@ class CommsManagerPage extends React.Component {
   state = {
     emailSubmitData: '',
     error: false,
+    templateToLoad: '',
     inputs: {
       templateId: '',
       templateName: '',
@@ -31,6 +32,9 @@ class CommsManagerPage extends React.Component {
     const { history } = this.props;
     // This will give u the template ID to be loaded with
     const templateToLoad = history.location.state?.templateId;
+    this.setState({
+      templateToLoad
+    })
   }
 
   onChange = (e) => {
@@ -82,7 +86,7 @@ class CommsManagerPage extends React.Component {
   }
 
   render() {
-    const { inputs, error } = this.state;
+    const { inputs, error, templateToLoad } = this.state;
     return (
       <>
         {error
@@ -93,7 +97,7 @@ class CommsManagerPage extends React.Component {
             <StyledTemplateSection {...inputs} />
             <StyledCommModeSection {...inputs} />
             <StyledSmsTemplateSection onChange={this.onChange} onSubmit={this.onSubmit} {...inputs} />
-            <StyledEmailTemplateSection onChange={this.onChange} onSubmit={this.onSubmit} {...inputs} />
+            <StyledEmailTemplateSection onChange={this.onChange} onSubmit={this.onSubmit} templateToLoad={templateToLoad} {...inputs} />
           </form>
         }
       </>

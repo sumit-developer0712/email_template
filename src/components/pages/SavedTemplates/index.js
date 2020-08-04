@@ -17,7 +17,7 @@ function SavedTemplates(props) {
   function onClick(e) {
     const { name, id } = e.target;
     if (name === 'edit') {
-      props.history.push('/', {
+      props.history.push('/editTemplate', {
         templateId: id
       });
     }
@@ -38,8 +38,8 @@ function SavedTemplates(props) {
               <tr>
                 {headers.map((columnName) => <StyledCell>{cellData[columnName]}</StyledCell>)}
                 <StyledCellChangesSection>
-                  <StyledSearchButton id='1' name='view' onClick={onClick} icon='fa-search' text='View' />
-                  <Button id='1' name='edit' onClick={onClick} icon='fa-pencil' text='Edit' />
+                  <StyledSearchButton id={cellData['Template ID']} name='view' onClick={onClick} icon='fa-search' text='View' />
+                  <Button id={cellData['Template ID']} name='edit' onClick={onClick} icon='fa-pencil' text='Edit' />
                 </StyledCellChangesSection>
               </tr>
             )

@@ -24,6 +24,11 @@ function AppShell(props) {
             exact
             path={`${match.url}templates`}
           />
+          <Route
+            component={CommsManagerPage}
+            exact
+            path={`${match.url}editTemplate`}
+          />
         </Switch>
       </StyledContainer>
     )
